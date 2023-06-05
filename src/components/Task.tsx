@@ -9,7 +9,7 @@ const Task = (props: Props) => {
   const task = useStore((store) =>
     store.tasks.find((task) => task.title === title)
   );
-    console.log(task?.state)
+  console.log(task?.state);
   let bg = 'bg-yellow-300';
   if (task?.state === 'DONE') {
     bg = 'bg-green-600';
